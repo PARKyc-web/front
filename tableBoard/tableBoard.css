@@ -1,22 +1,50 @@
 * {
-    box-sizing: border-box;    
+    box-sizing: border-box;
 }
 
 /**
     테이블의 전체크기 > 1200px;
     중앙배치
 */
-main{
-    width: 1200px;
+main {
+    width: 80%;
     margin: 0 auto;
+    margin-top: 50px;
 }
 
 
 /**
     게시판 위쪽의 검색창 및 버튼
 */
-.upper-left, .upper-right{
-    display: inline-block;    
+.upper {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.upper-left label {
+    margin-bottom: 0px;
+    vertical-align: bottom;
+}
+
+.total-page {
+    color: navy;
+    font-weight: bold;
+}
+
+.upper-right {
+    text-align: right;
+}
+
+.upper-right select {
+    border: 1px solid gray;
+    padding: 5px;
+    height: 100%;
+}
+
+.upper-right .search-box {
+    padding: 6px;
+    border: 1px solid gray;
+    height: 100%;
 }
 
 
@@ -25,33 +53,97 @@ main{
     게시핀에 관련된 CSS
 */
 .table {
-    border: 1px solid black;        
-    margin: 0 auto;
+    margin-top: 5px;
+    border-top: 2px solid navy;
+    border-bottom: 2px solid navy;
 }
+
 .table a {
     text-decoration: none;
     color: black;
 }
 
-
 .board-no {
     width: 5%;
-}
-.board-title {
-    width: 60%;
-    text-overflow: ellipsis;
-    background-color: red;    
-}
-.board-reg {
-    width: 10%;
-}
-.board-view {
-    width: 10%;
-}
-.board-file {
-    width: 10%;
+    text-align: center;
 }
 
+.board-title {
+    width: 65%;
+}
+
+.board-reg {
+    width: 10%;
+    text-align: center;
+}
+
+.board-view {
+    width: 10%;
+    text-align: center;
+}
+
+.board-file {
+    width: 10%;
+    text-align: center;
+}
+
+.td-box {
+    position: relative;
+}
+
+.txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/**
+    게시판 아래쪽 CSS
+*/
+.bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bottom-right {
+    text-align: right;
+}
+
+
+/**
+    Paging button
+*/
+.page-paging {
+    text-align: right;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
 
 
 /** 버튼에 대한 색 및 크기
@@ -60,11 +152,20 @@ main{
     color: white;
     background-color: navy;
     padding: 5px;
+    border: 1px solid black;
 }
 
-input[type="button"]:hover {    
-    cursor:pointer;
+.btn-gray {
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    border: 1px solid black;
 }
 
+.text-center {
+    text-align: center;
+}
 
-
+input[type="button"]:hover {
+    cursor: pointer;
+}
