@@ -1,7 +1,6 @@
 $(document).ready(function(){    
     
-    $.getJSON("tableBoard.json", function(data){
-        console.log(data);
+    $.getJSON("tableBoard.json", function(data){        
 
         /** 
          *  하나의 문자열을 만드는 방법
