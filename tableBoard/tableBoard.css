@@ -4,8 +4,10 @@
 
 main {
     margin: 0 auto;
+    margin-top: 5%;
     width: 70%;
 }
+
 img {
     width: 20%;
     margin: 5px;
@@ -16,50 +18,57 @@ img {
     display: grid;
     grid-template-columns: 10% 40%;
     margin-bottom: 10px;
-    column-gap: 50%;        
+    column-gap: 50%;
     /* justify-items: end; */
-    
+
 }
+
 .upper-left {
-    align-items: end;    
+    align-items: end;
     vertical-align: bottom;
 }
+
 .upper-left .search-count {
     font-weight: bold;
-    color : navy;    
+    color: navy;
 }
+
 .upper-right {
     display: grid;
-    grid-template-columns: 18% 35% 10%;    
-    column-gap: 1%;     
+    grid-template-columns: 18% 35% 10%;
+    column-gap: 1%;
     justify-content: end;
 }
 
 
 /* 테이블 게시판*/
 .table-wrap {
-    border-top : 2px solid navy;
+    border-top: 2px solid navy;
     border-bottom: 2px solid navy;
 }
+
 .table {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
     text-align: center;
 }
+
 .table thead {
     background-color: rgba(227, 227, 227, 0.89);
     height: 35px;
-    color: navy;    
+    color: navy;
 }
+
 .table tr {
-    border-top : 1px solid grey;
+    border-top: 1px solid grey;
     height: 40px;
 }
 
 .table-title {
     text-align: left;
 }
+
 .table-title a {
     width: 80%;
     display: block;
@@ -79,24 +88,65 @@ img {
     grid-template-columns: 50% 50%;
     margin-top: 10px;
 }
+
 .bottom-right {
     text-align: right;
 }
 
 
+/* 페이징 관련 CSS */
+.pager-wrap {    
+    text-align: center;
+    margin-top: 40px;
+}
+.pagination {
+    display: inline-block;
+    text-align: center;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+.pagination a.active {
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
 
 
 /* 버튼 색 정하기*/
-.search-type {border: 1px solid black}
-.search-content {border: 1px solid black}
+.search-type {
+    border: 1px solid black
+}
+
+.search-content {
+    border: 1px solid black
+}
 
 .navy-btn {
     background-color: navy;
     color: white;
 
-    border: 1px solid black;    
+    border: 1px solid black;
     padding: 5px;
 }
+
 .gray-btn {
     background-color: gray;
     color: white;

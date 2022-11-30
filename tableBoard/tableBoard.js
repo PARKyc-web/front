@@ -20,8 +20,11 @@ $(document).ready(function(){
 
             $(".table-body").append(row);
         }
-
-
-    });    
+    });  
+    
+    $('.pagination a').click(function(){
+        $(this).siblings("a").removeClass("active");
+        $(this).addClass("active");        
+    });
 });
 

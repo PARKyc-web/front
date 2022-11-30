@@ -2,14 +2,14 @@
     {
         "no" : 3,
         "title" : "title-example",
-        "reg" : "2022-11-28",
-        "view" : "4",
+        "reg" : "2022-11-29",
+        "view" : "6",
         "file" : "Y"
     },
     {
         "no" : 4,
         "title" : "Long Long title-example Long Long title-example Long Long title-example Long Long title-example Long Long title-example",
-        "reg" : "2022-11-28",
+        "reg" : "2022-11-29",
         "view" : "4",
         "file" : "N"
     },
@@ -17,21 +17,44 @@
         "no" : 5,
         "title" : "title-example",
         "reg" : "2022-11-28",
-        "view" : "4",
+        "view" : "9",
         "file" : "N"
     },
     {
         "no" : 6,
         "title" : "title-example",
         "reg" : "2022-11-28",
-        "view" : "4",
+        "view" : "11",
         "file" : "Y"
     },
     {
         "no" : 7,
-        "title" : "title-example, title-example, title-example, title-example ,title-example ,title-example ,title-example, title-example",
-        "reg" : "2022-11-28",
-        "view" : "4",
+        "title" : "타이틀 제목입니다.",
+        "reg" : "2022-11-27",
+        "view" : "24",
         "file" : "Y"
+    },
+    {
+        "no" : 8,
+        "title" : "제목이 길면 말줄임이 되는것을 확인했습니다.",
+        "reg" : "2022-11-26",
+        "view" : "43",
+        "file" : "Y"
+    },
+    {
+        "no" : 9,
+        "title" : "JSON 테스트 타이틀 입니다",
+        "reg" : "2022-11-25",
+        "view" : "10",
+        "file" : "Y"
+    },
+    {
+        "no" : 10,
+        "title" : "게시글 번호 10번의 글입니다.",
+        "reg" : "2022-11-23",
+        "view" : "100",
+        "file" : "N"
     }
+
+
 ]
