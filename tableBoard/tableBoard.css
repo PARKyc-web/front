@@ -2,170 +2,108 @@
     box-sizing: border-box;
 }
 
-/**
-    테이블의 전체크기 > 1200px;
-    중앙배치
-*/
 main {
-    width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
+    width: 70%;
+}
+img {
+    width: 20%;
+    margin: 5px;
 }
 
-
-/**
-    게시판 위쪽의 검색창 및 버튼
-*/
-.upper {
+/* 테이블 상단 검색 메뉴*/
+.upper-wrap {
     display: grid;
-    grid-template-columns: 10% 90%;
+    grid-template-columns: 10% 40%;
+    margin-bottom: 10px;
+    column-gap: 50%;        
+    /* justify-items: end; */
+    
 }
-
-.upper-left label {
-    margin-bottom: 0px;
+.upper-left {
+    align-items: end;    
     vertical-align: bottom;
 }
-
-.total-page {
-    color: navy;
+.upper-left .search-count {
     font-weight: bold;
+    color : navy;    
 }
-
 .upper-right {
-    text-align: right;
-}
-
-.upper-right select {
-    border: 1px solid gray;
-    padding: 5px;
-    height: 100%;
-}
-
-.upper-right .search-box {
-    padding: 6px;
-    border: 1px solid gray;
-    height: 100%;
+    display: grid;
+    grid-template-columns: 18% 35% 10%;    
+    column-gap: 1%;     
+    justify-content: end;
 }
 
 
-
-/**
-    게시핀에 관련된 CSS
-*/
-.table {
-    margin-top: 5px;
-    border-top: 2px solid navy;
+/* 테이블 게시판*/
+.table-wrap {
+    border-top : 2px solid navy;
     border-bottom: 2px solid navy;
 }
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+}
+.table thead {
+    background-color: rgba(227, 227, 227, 0.89);
+    height: 35px;
+    color: navy;    
+}
+.table tr {
+    border-top : 1px solid grey;
+    height: 40px;
+}
 
-.table a {
+.table-title {
+    text-align: left;
+}
+.table-title a {
+    width: 80%;
+    display: block;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
     text-decoration: none;
     color: black;
 }
 
-.board-no {
-    width: 5%;
-    text-align: center;
-}
 
-.board-title {
-    width: 75%;
-}
-
-.board-reg {
-    width: 10%;
-    text-align: center;
-}
-
-.board-view {
-    width: 5%;
-    text-align: center;
-}
-
-.board-file {
-    width: 5%;
-    text-align: center;
-}
-
-.td-box {
-    position: relative;
-}
-
-.txt {
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-/**
-    게시판 아래쪽 CSS
-*/
-.bottom {
+/* 테이블 하단 메뉴 버튼*/
+.bottom-wrap {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin-top: 10px;
 }
-
 .bottom-right {
     text-align: right;
 }
 
 
-/**
-    Paging button
-*/
-.page-paging {
-    margin-top: 30px;
-    display: grid;
-    place-items: center;
-}
 
-.pagination {
-    display: inline-block;
-}
 
-.pagination a {
-    color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
-    transition: background-color .3s;
-    border: 1px solid #ddd;
-}
+/* 버튼 색 정하기*/
+.search-type {border: 1px solid black}
+.search-content {border: 1px solid black}
 
-.pagination a.active {
+.navy-btn {
+    background-color: navy;
+    color: white;
+
+    border: 1px solid black;    
+    padding: 5px;
+}
+.gray-btn {
     background-color: gray;
     color: white;
-    border: 1px solid gray;
-}
 
-.pagination a:hover:not(.active) {
-    background-color: #ddd;
-}
-
-
-/** 버튼에 대한 색 및 크기
-*/
-.btn-navy {
-    color: white;
-    background-color: navy;
-    padding: 5px;
     border: 1px solid black;
-}
-
-.btn-gray {
-    color: white;
-    background-color: grey;
+    width: 50px;
     padding: 5px;
-    border: 1px solid black;
-}
-
-.text-center {
-    text-align: center;
 }
 
 input[type="button"]:hover {

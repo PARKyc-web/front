@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+/**
+    테이블의 전체크기 > 1200px;
+    중앙배치
+*/
+main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+/**
+    게시판 위쪽의 검색창 및 버튼
+*/
+.upper {
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.upper-left label {
+    margin-bottom: 0px;
+    vertical-align: bottom;
+}
+
+.total-page {
+    color: navy;
+    font-weight: bold;
+}
+
+.upper-right {
+    text-align: right;
+}
+
+.upper-right select {
+    border: 1px solid gray;
+    padding: 5px;
+    height: 100%;
+}
+
+.upper-right .search-box {
+    padding: 6px;
+    border: 1px solid gray;
+    height: 100%;
+}
+
+
+
+/**
+    게시핀에 관련된 CSS
+*/
+.table {
+    margin-top: 5px;
+    border-top: 2px solid navy;
+    border-bottom: 2px solid navy;
+}
+
+.table a {
+    text-decoration: none;
+    color: black;
+}
+
+.board-no {
+    width: 5%;
+    text-align: center;
+}
+
+.board-title {
+    width: 75%;
+}
+
+.board-reg {
+    width: 10%;
+    text-align: center;
+}
+
+.board-view {
+    width: 5%;
+    text-align: center;
+}
+
+.board-file {
+    width: 5%;
+    text-align: center;
+}
+
+.td-box {
+    position: relative;
+}
+
+.txt {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/**
+    게시판 아래쪽 CSS
+*/
+.bottom {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bottom-right {
+    text-align: right;
+}
+
+
+/**
+    Paging button
+*/
+.page-paging {
+    margin-top: 30px;
+    display: grid;
+    place-items: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: gray;
+    color: white;
+    border: 1px solid gray;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+
+/** 버튼에 대한 색 및 크기
+*/
+.btn-navy {
+    color: white;
+    background-color: navy;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.btn-gray {
+    color: white;
+    background-color: grey;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+}
